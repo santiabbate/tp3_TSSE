@@ -1,0 +1,54 @@
+---
+:source:
+  :path: test
+  :file: test_leds.c
+:successes:
+- :test: test_LedsOffAfterCreate
+  :line: 29
+  :message: ''
+  :unity_test_time: 0
+- :test: test_IndividualLedOn
+  :line: 37
+  :message: ''
+  :unity_test_time: 0
+- :test: test_IndividualLedOff
+  :line: 46
+  :message: ''
+  :unity_test_time: 0
+- :test: test_MultipleLedOnOff
+  :line: 56
+  :message: ''
+  :unity_test_time: 0
+- :test: test_AllLedsOn
+  :line: 67
+  :message: ''
+  :unity_test_time: 0
+- :test: test_AllLedsOff
+  :line: 75
+  :message: ''
+  :unity_test_time: 0
+- :test: test_QueryLed
+  :line: 84
+  :message: ''
+  :unity_test_time: 0
+- :test: test_MultipleLedOnExtremos
+  :line: 96
+  :message: ''
+  :unity_test_time: 0
+- :test: test_OutOfRangeOn
+  :line: 108
+  :message: ''
+  :unity_test_time: 0
+- :test: test_OutOfRangeOff
+  :line: 120
+  :message: ''
+  :unity_test_time: 0
+:failures: []
+:ignores: []
+:counts:
+  :total: 10
+  :passed: 10
+  :failed: 0
+  :ignored: 0
+:stdout: []
+:time: 0.0028933479989063926

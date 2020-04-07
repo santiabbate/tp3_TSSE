@@ -5,26 +5,6 @@ static uint16_t ledsVirtuales;
 
 
 
-void setUp(void)
-
-{
-
-    Leds_Create(&ledsVirtuales);
-
-}
-
-
-
-void tearDown(void)
-
-{
-
-
-
-}
-
-
-
 
 
 void test_LedsOffAfterCreate(void)
@@ -39,7 +19,7 @@ void test_LedsOffAfterCreate(void)
 
    ((void *)0)
 
-   ), (UNITY_UINT)(33), UNITY_DISPLAY_STYLE_HEX16);
+   ), (UNITY_UINT)(23), UNITY_DISPLAY_STYLE_HEX16);
 
 }
 
@@ -61,7 +41,7 @@ void test_IndividualLedOn(void)
 
    ((void *)0)
 
-   ), (UNITY_UINT)(42), UNITY_DISPLAY_STYLE_INT);
+   ), (UNITY_UINT)(32), UNITY_DISPLAY_STYLE_INT);
 
 }
 
@@ -85,7 +65,7 @@ void test_IndividualLedOff(void)
 
    ((void *)0)
 
-   ), (UNITY_UINT)(52), UNITY_DISPLAY_STYLE_INT);
+   ), (UNITY_UINT)(42), UNITY_DISPLAY_STYLE_INT);
 
 }
 
@@ -111,7 +91,7 @@ void test_MultipleLedOnOff(void)
 
    ((void *)0)
 
-   ), (UNITY_UINT)(63), UNITY_DISPLAY_STYLE_INT);
+   ), (UNITY_UINT)(53), UNITY_DISPLAY_STYLE_INT);
 
 }
 
@@ -131,7 +111,7 @@ void test_AllLedsOn(void)
 
    ((void *)0)
 
-   ), (UNITY_UINT)(71), UNITY_DISPLAY_STYLE_HEX16);
+   ), (UNITY_UINT)(61), UNITY_DISPLAY_STYLE_HEX16);
 
 }
 
@@ -153,7 +133,7 @@ void test_AllLedsOff(void)
 
    ((void *)0)
 
-   ), (UNITY_UINT)(80), UNITY_DISPLAY_STYLE_INT);
+   ), (UNITY_UINT)(70), UNITY_DISPLAY_STYLE_INT);
 
 }
 
@@ -179,7 +159,7 @@ void test_QueryLed(void)
 
    ((void *)0)
 
-   ), (UNITY_UINT)(91), UNITY_DISPLAY_STYLE_INT);
+   ), (UNITY_UINT)(81), UNITY_DISPLAY_STYLE_INT);
 
 }
 
@@ -207,7 +187,7 @@ void test_QueryLed(void)
 
    ((void *)0)
 
-   ), (UNITY_UINT)(103), UNITY_DISPLAY_STYLE_INT);
+   ), (UNITY_UINT)(93), UNITY_DISPLAY_STYLE_INT);
 
 }
 
@@ -235,7 +215,7 @@ void test_QueryLed(void)
 
    ((void *)0)
 
-   ), (UNITY_UINT)(115), UNITY_DISPLAY_STYLE_INT);
+   ), (UNITY_UINT)(105), UNITY_DISPLAY_STYLE_INT);
 
 }
 
@@ -265,6 +245,6 @@ void test_QueryLed(void)
 
    ((void *)0)
 
-   ), (UNITY_UINT)(128), UNITY_DISPLAY_STYLE_INT);
+   ), (UNITY_UINT)(118), UNITY_DISPLAY_STYLE_INT);
 
 }

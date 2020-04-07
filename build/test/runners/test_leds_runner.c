@@ -36,6 +36,12 @@ static void CMock_Destroy(void)
 {
 }
 
+/*=======Setup (stub)=====*/
+void setUp(void) {}
+
+/*=======Teardown (stub)=====*/
+void tearDown(void) {}
+
 /*=======Test Reset Options=====*/
 void resetTest(void);
 void resetTest(void)
@@ -86,16 +92,16 @@ static void run_test(UnityTestFunction func, const char* name, int line_num)
 int main(void)
 {
   UnityBegin("test_leds.c");
-  run_test(test_LedsOffAfterCreate, "test_LedsOffAfterCreate", 29);
-  run_test(test_IndividualLedOn, "test_IndividualLedOn", 37);
-  run_test(test_IndividualLedOff, "test_IndividualLedOff", 46);
-  run_test(test_MultipleLedOnOff, "test_MultipleLedOnOff", 56);
-  run_test(test_AllLedsOn, "test_AllLedsOn", 67);
-  run_test(test_AllLedsOff, "test_AllLedsOff", 75);
-  run_test(test_QueryLed, "test_QueryLed", 84);
-  run_test(test_MultipleLedOnExtremos, "test_MultipleLedOnExtremos", 96);
-  run_test(test_OutOfRangeOn, "test_OutOfRangeOn", 108);
-  run_test(test_OutOfRangeOff, "test_OutOfRangeOff", 120);
+  run_test(test_LedsOffAfterCreate, "test_LedsOffAfterCreate", 19);
+  run_test(test_IndividualLedOn, "test_IndividualLedOn", 27);
+  run_test(test_IndividualLedOff, "test_IndividualLedOff", 36);
+  run_test(test_MultipleLedOnOff, "test_MultipleLedOnOff", 46);
+  run_test(test_AllLedsOn, "test_AllLedsOn", 57);
+  run_test(test_AllLedsOff, "test_AllLedsOff", 65);
+  run_test(test_QueryLed, "test_QueryLed", 74);
+  run_test(test_MultipleLedOnExtremos, "test_MultipleLedOnExtremos", 86);
+  run_test(test_OutOfRangeOn, "test_OutOfRangeOn", 98);
+  run_test(test_OutOfRangeOff, "test_OutOfRangeOff", 110);
 
   return UnityEnd();
 }
